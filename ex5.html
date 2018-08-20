@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function test() {
+        var a = prompt("Input the first number");
+        var b = prompt("Input the second number");
+        var c = prompt("Input the third number");
+        var d = c/(a-b);
+
+        try {
+            if ((a-b) == 0) throw "infinity";
+            alert("Result: " +d);
+        } catch (e) {
+            alert("Input is " + e);
+        }
+
+        }
+
+
+    </script>
+</head>
+<body>
+<button type="button" onclick="test()">Test Input</button>
+</body>
+</html>

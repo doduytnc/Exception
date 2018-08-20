@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bat loi nhap ten khong dung</title>
+</head>
+
+<script>
+    var message = document.getElementById("message");
+    var name = document.getElementById("inputName").value;
+    try {
+        if (name != "Duy") throw "Invalid";
+        alert("")
+        } catch (e) {
+        message.innerHTML = "Input is " + e.messager;
+
+    }
+</script>
+<body>
+<p>Please input your name</p>
+<input id="inputName" type="text">
+<button type="button" onclick="name()">Test Input</button>
+<p id="message"></p>
+</body>
+</html>

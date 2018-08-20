@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bat loi nhap ten khong dung</title>
+</head>
+
+<script>
+
+    var name = prompt("Input your name");
+    try {
+        if (name != "duy") throw "Valid";
+        alert("Valid");
+        console.log("Valid");
+    } catch (e) {
+        console.log("Input is " + e.message);
+        alert("Invalid");
+    }
+</script>
+<body>
+
+</body>
+</html>

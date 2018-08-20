@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function myFunction() {
+            var message = document.getElementById("message");
+            var x = document.getElementById("demo").value;
+            try {
+                x = Number(x);
+                if (x > 100) throw " > 100";
+                message.innerHTML = "Input is Valid";
+            } catch (err) {
+                message.innerHTML = "Error: Input is " + err;
+            }
+        finally {
+                alert("Thank you");
+            }
+        }
+    </script>
+
+</head>
+<body>
+<p>Please input a number </p>
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="message"></p>
+</body>
+</html>

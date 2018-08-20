@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stockholm</title>
+
+    <script>
+        function myFunction() {
+            var message = document.getElementById("message");
+            var x = document.getElementById("demo").value;
+            try {
+                if (x !== "stockholm") throw "not stockholm";
+                                message.innerHTML = "Valid";
+            } catch (err) {
+                message.innerHTML = "Input is " + err;
+            }
+        }
+    </script>
+
+</head>
+<body>
+<p>Please input </p>
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="message"></p>
+</body>
+</html>

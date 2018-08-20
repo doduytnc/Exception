@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra phep chia cho 0</title>
+    <script>
+        function check() {
+            var a = prompt("Input a number");
+            var c = a/0 ;
+            try {
+                alert(a + " chia cho 0 bang " +c);
+            } catch (e) {
+                alert("Error:	" + e.message);
+            }
+        }
+    </script>
+</head>
+<body>
+<button type="button" onclick="check()">Check</button>
+</body>
+</html>
